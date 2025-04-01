@@ -1,0 +1,13 @@
+Create methods with checks(null and empty) and validate them use Junit tests
+
+1. The method returns first shortest word in the text
+His name is Vasya --> is
+public static String returnShortestWord(String text)
+
+
+2. The method replaces word1 with word2 in the text and returns the text
+My cat is the best cat in the world --> My dog is the best dog in the world
+public static String replacesWords(String text, String word1, word2)
+
+3*.The method returns initials (Ivanov Oleg Mihailovich --> I.O.M.)
+public static String returnsInitials(String fio)
