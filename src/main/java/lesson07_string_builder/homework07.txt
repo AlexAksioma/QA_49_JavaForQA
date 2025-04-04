@@ -1,0 +1,20 @@
+Homework: use StringBuilder
+	 1. public static void printCapitals(String s)
+	    s-->"Hello Course QA 49"
+	    output:
+	    "HCQ4"
+
+	  2.public static void printLastLettersReverse(String s)
+	    s-->"Hello Course QA 49"
+	    output:
+	    "9Aeo"
+
+	  3.public static String insertFrom(String s, int index, String ins)
+	        012345678910
+	    s->"hello world"
+	    ins -->"my "
+	    index --> 6
+	    result str --> "hello my world" to return
+
+       4*.public static String toCamelCase(String input)
+        "hello java world" --> "helloJavaWorld"
