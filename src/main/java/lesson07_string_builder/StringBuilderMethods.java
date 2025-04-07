@@ -22,6 +22,7 @@ public class StringBuilderMethods {
         StringBuilder stringBuilder4 = new StringBuilder("Hello");
         System.out.println(stringBuilder4);
         stringBuilder4.append(123);
+
         System.out.println(stringBuilder4);
         stringBuilder4.append(true).append(356.5f).append(" ").append("string").append('A');
         System.out.println(stringBuilder4);

@@ -1,0 +1,17 @@
+Homework:
+
+1. Create class Computer (constructors, getters, setters, toString)
+             Computer
+             -------
+             company(String) "Lenovo"
+             ram(int)        8 , 16
+             cpu(String)     "i5 , i9"
+             sdd(int)        512, 1024
+
+2. Create class MainComputer - main
+         create 5 objects Computer
+         use setters and getter for printing
+
+3. for your choose
+
+4.  public static String toCamelCase(String input) create test class ang checks
