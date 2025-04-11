@@ -32,7 +32,7 @@ public class HomeWork07_solution {
             return null;
         }
         String[] arrayStr = input.trim().split(" ");
-        StringBuilder result = new StringBuilder(arrayStr[0].toLowerCase());
+        StringBuilder result = new StringBuilder(arrayStr[0].trim().toLowerCase());
         for (int i = 1; i < arrayStr.length; i++) {
             char firstChar = Character.toUpperCase(arrayStr[i].charAt(0)); //C Q
             result.append(firstChar).append(arrayStr[i].substring(1).toLowerCase());
