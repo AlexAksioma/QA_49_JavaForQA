@@ -13,3 +13,5 @@ Custom sorting by name, year reverse (2020 --> 2018 -->2001)
 Create 10 objects of Movie and add to List, print movies sort by tasks 2,3
 
 5*. Custom sorting by name reverse, year and rating
+if name1=name2 sort by years
+if year1=year2 sort by rating
