@@ -1,0 +1,19 @@
+1. Create class (constructors, gets, sets, toString, equals, hash)
+       Device
+      |        |
+   SmartTV    HeadPhones
+
+class SmartTV
+int screenSize;
+boolean isFullHD;
+
+class HeadPhones
+boolean superBass;
+double powerSound;
+
+2. create interface ShowPrograms
+void show();
+
+3. In the DeviceMain create 2 arrays (HeadPhones, SmartTV)
+ - print arrays
+ - use method show for array

@@ -1,0 +1,12 @@
+1. Create collections
+  1.1. ArrayList<Float>, add 10 elements
+  1.2  LinkedList<Boolean>, add 10 elements
+  1.3  Create method printCollection
+2*
+   2.1. Create class Person
+    with fields:
+    int id
+    String name
+    LocalDate(String) birth
+   2.2. Create ArrayList<Person>, add 10 elements(with duplicates)
+   2.3  Create method  - Delete all duplicates
