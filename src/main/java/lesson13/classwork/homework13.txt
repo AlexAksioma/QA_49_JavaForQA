@@ -1,0 +1,6 @@
+create methods
+1. public Product findProduct(int code)
+
+2. public void removeProductFromStock(int code)
+
+3*. public double totalCoast()  coast = price * quantity
