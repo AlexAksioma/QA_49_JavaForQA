@@ -83,7 +83,7 @@ public class Product implements Comparable<Product>{
     }
 
     @Override
-    public int compareTo(Product other) {
+    public int compareTo(Product other) {  //product1.compareTo(product2)
         return name.compareToIgnoreCase(other.name);
     }
 }

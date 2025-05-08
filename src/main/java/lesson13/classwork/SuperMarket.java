@@ -40,6 +40,8 @@ public class SuperMarket {
 //    }
 
     public void addProduct(Product product, double quantity) {
+        if (product == null || quantity <= 0.)
+            return;
         if (!stock.contains(product)) {
             product.setQuantity(quantity);
             stock.add(product);
@@ -64,5 +66,38 @@ public class SuperMarket {
             System.out.println(p);
         }
         System.out.println("===============");
+    }
+
+    /*
+    create methods
+1. public Product findProduct(int code)
+2. public void removeProductFromStock(int code)
+3*. public double totalCoast()  coast = price * quantity
+     */
+    public Product findProduct(int code) {
+        for (Product p : stock) {
+            if (p.getCode() == code)
+                return p;
+        }
+        System.out.println("not found product in the stock");
+        return null;
+    }
+
+    public void removeProductFromStock(int code) {
+        Product product = findProduct(code);
+        if (product != null) {
+            stock.remove(product);
+            System.out.println("Product removed");
+        } else
+            System.out.println("Product not found");
+    }
+
+    public double totalCoast() {
+        double result = 0.;
+        for (Product p : stock) {
+            result += p.getQuantity() * p.getPrice();
+            //p1.quantity * p1.price = p1 coast + p2 coast ....
+        }
+        return result;
     }
 }

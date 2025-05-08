@@ -1,0 +1,10 @@
+1. Create HashSet type char, add 10 elements
+  Create method boolean deleteElementFromCharSet(char ch)
+
+2. Create LinkedHashSet type Student, add 10 elements
+  create method Double averageGrade(LinkedHashSet set)
+  if set null or empty return null
+
+3*. Create TreeSet type Student
+    create method printStudentSortGrade(TreeSet set)
+    4.4 --> 7.6 --> 7.6 --> 9.9 or reverse

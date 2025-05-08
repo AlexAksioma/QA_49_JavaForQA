@@ -1,5 +1,7 @@
 package lesson13.classwork;
 
+import java.util.ArrayList;
+
 public class MainSupermarket {
     public static void main(String[] args) {
         Product p1 = new Product("Apple", 101, "kg", 3.5);
@@ -30,5 +32,23 @@ public class MainSupermarket {
         Product p11_1 = new Product("Apple Green", 101, "kg", 3.5);
         superMarket.addProduct(p11_1, 50);
         superMarket.printProducts();
+        System.out.println("======================= homework solution ==========================");
+        System.out.println(superMarket.findProduct(105));
+        System.out.println(superMarket.findProduct(0));
+        superMarket.printProducts();
+        superMarket.removeProductFromStock(105);
+        superMarket.removeProductFromStock(-100);
+        superMarket.printProducts();
+        System.out.println("total coast -->" + superMarket.totalCoast());
+        System.out.println("===============================");
+        SuperMarket superMarket1 = new SuperMarket("Market", "Haifa Street 123");
+        superMarket1.printProducts();
+        superMarket1.findProduct(123);
+        System.out.println(superMarket1.totalCoast());
+        System.out.println("===============================");
+        ArrayList<Product> products = new ArrayList<>(superMarket.getStock());
+        System.out.println(products);
+        products.removeIf(product -> product.getCode() > 103 && product.getCode() <= 107);
+        System.out.println(products);
     }
 }
