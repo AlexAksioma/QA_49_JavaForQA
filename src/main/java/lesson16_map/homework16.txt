@@ -1,0 +1,9 @@
+1. create hashMap
+    City - Population
+add 10 items
+2. create LinkedHashMap
+    Family - Student (lesson14)
+add 10 items
+3*. create Map
+    StudentId - Student (lesson14)
+printAllStudentsGrades(Map students)
