@@ -52,12 +52,14 @@ public class TreeMapMethods {
 
     }
 }
+
 class ComparatorByAge implements Comparator<Cat>{
     @Override
     public int compare(Cat c1, Cat c2) {
         return Integer.compare(c1.age, c2.age);
     }
 }
+
 class Cat implements Comparable<Cat>{
     int age;
     String name;

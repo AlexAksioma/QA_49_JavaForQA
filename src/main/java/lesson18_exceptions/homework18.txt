@@ -1,0 +1,3 @@
+Created method
+static Integer quantityWords(String str)
+don't use checking (null end empty), use try/catch

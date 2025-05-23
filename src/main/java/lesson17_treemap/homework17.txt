@@ -1,0 +1,11 @@
+1. Create 3(three) TreeMap<Cat, Integer> (Cat like from lesson17)
+- sorted by weight reverse
+- sorted by name and age reverse
+- sorted be name reverse, age and weigh
+
+2. create methods
+2.1 count the frequency of words and sort alphabeticallyу
+    static Map<String, Integer> wordFreqSorted(String text)
+
+2.2 return the first word that is repeated in the string
+    static String firstRepeatedWord(String text)
