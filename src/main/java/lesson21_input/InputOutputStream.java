@@ -27,6 +27,7 @@ public class InputOutputStream {
             System.out.println("id:");
             id = Integer.parseInt(bufferedReader.readLine());
             System.out.println("name --> " + name + " age --> " + age + " id --> " + id);
+            bufferedReader.close();
         } catch (IOException e) {
             e.printStackTrace();
         }

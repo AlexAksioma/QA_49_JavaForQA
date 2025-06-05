@@ -23,6 +23,6 @@ public class Homework18_tests {
 
     @Test
     public void quantityWordsNegativeTest_spaces(){
-        assertEquals(0, quantityWords("     "));
+        assertEquals(0, quantityWords("  ,   "));
     }
 }
