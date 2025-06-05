@@ -1,0 +1,4 @@
+Create methods
+1. static Student createStudentFromConsole() use Scanner
+2. static ArrayList<Integer> fillIntListFromConsole
+   use BuffReader, with checks
