@@ -16,16 +16,34 @@ public class ScannerMethods {
 //        System.out.println("input:");
 //        int number = scanner1.nextInt();
 //        System.out.println("number = " + number);
-        printNumber();
+        // printNumber();
+        System.out.println(printText());
+
     }
 
-    static void printNumber(){
+    static void printNumber() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("input number:");
-        if(scanner.hasNextInt()){
+        if (scanner.hasNextInt()) {
             int number = scanner.nextInt();
-            System.out.println("number*10 = "+number*10);
-        }else
+            System.out.println("number*10 = " + number * 10);
+        } else
             System.out.println("wrong input");
+    }
+
+    static String printText() {
+        Scanner scanner = new Scanner(System.in);
+        StringBuilder result = new StringBuilder();
+        System.out.println("input word:");
+        while (true) {
+            if (scanner.hasNext()) {
+                String word = scanner.next();
+                if (word.equalsIgnoreCase("exit"))
+                    break;
+                else
+                    result.append(word).append(" ");
+            }
+        }
+        return result.toString();
     }
 }

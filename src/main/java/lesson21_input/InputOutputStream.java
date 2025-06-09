@@ -27,9 +27,43 @@ public class InputOutputStream {
             System.out.println("id:");
             id = Integer.parseInt(bufferedReader.readLine());
             System.out.println("name --> " + name + " age --> " + age + " id --> " + id);
-            bufferedReader.close();
+            //bufferedReader.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
+        System.out.println("============================================");
+        try {
+            System.out.println(createText());
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
+    static String createText() throws IOException {
+        InputStreamReader inputStreamReader = new InputStreamReader(System.in);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        StringBuilder result = new StringBuilder();
+        System.out.println("input word:");
+        String word = bufferedReader.readLine();
+        while (!word.equalsIgnoreCase("exit")) {
+            result.append(word).append(" ");
+            word = bufferedReader.readLine();
+        }
+        return result.toString();
+
+}
+
+    static String createTextWrong() throws IOException {   //wrong method
+        InputStreamReader inputStreamReader = new InputStreamReader(System.in);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        StringBuilder result = new StringBuilder();
+        System.out.println("input word:");
+        while (!bufferedReader.readLine().equalsIgnoreCase("exit")) {
+            String word = bufferedReader.readLine();
+            result.append(word).append(" ");
+        }
+        return result.toString();
+
     }
 }

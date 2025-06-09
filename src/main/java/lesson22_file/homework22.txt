@@ -1,0 +1,7 @@
+in the folder lesson22_file
+1. create folder homework
+2. create txt file
+3. create method write to txt file
+4*. create method
+  - get Student from System.in
+  - write Student to file student.txt
