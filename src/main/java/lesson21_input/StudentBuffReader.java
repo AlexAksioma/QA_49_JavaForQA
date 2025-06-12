@@ -33,7 +33,7 @@ public class StudentBuffReader {
         return students;
     }
 
-    static Student createStudentFromConsole() throws IOException {
+    public static Student createStudentFromConsole() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         Student student = new Student();
         System.out.println("input name:");
