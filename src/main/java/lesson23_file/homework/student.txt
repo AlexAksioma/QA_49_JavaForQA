@@ -1,0 +1,1 @@
+Student{name='Ivan', age=33, grade=6.6}

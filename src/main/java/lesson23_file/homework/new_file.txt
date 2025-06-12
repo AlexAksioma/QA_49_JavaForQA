@@ -1,0 +1,3 @@
+my text1
+text2
+new text
