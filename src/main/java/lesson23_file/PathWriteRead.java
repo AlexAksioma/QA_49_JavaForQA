@@ -15,6 +15,13 @@ public class PathWriteRead implements PathFile {
         writeToFile("1.txt", "my text123");
         System.out.println(returnListFromFile("1.txt"));
         System.out.println(returnListFromFile("path_file.txt"));
+        try {
+            Files.delete(Paths.get(""));
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("created exception");
+        }
+        System.out.println("print =======");
     }
 
     static void writeToFile(String fileName, String text){

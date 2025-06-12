@@ -1,0 +1,6 @@
+Created methods
+1. void printFromFile(String fileName) (use BuffReader, WO buffReader)
+   - print text
+   - print message (file is empty, not exists)
+
+2. boolean copyFile(Sting fileSource, String fileTarget)
